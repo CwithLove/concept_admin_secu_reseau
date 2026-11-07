@@ -1,0 +1,104 @@
+<mxfile host="app.diagrams.net" pages="2">
+  <diagram name="Page-1" id="SPone5ZWhFQSXbSpWx0-">
+    <mxGraphModel dx="3265" dy="2772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="X57-dYHS3JSpBM6KqWVd-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;labelPosition=center;verticalLabelPosition=middle;verticalAlign=top;fontColor=#1E3A8A;strokeWidth=2;" value="&lt;div style=&quot;line-height: 140%;&quot;&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;SITE LYON - LABORATOIRE / ARCHITECTURE CIBLE&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="820" width="1145" x="-247.5" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="X57-dYHS3JSpBM6KqWVd-5" edge="1" parent="1" source="X57-dYHS3JSpBM6KqWVd-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;strokeColor=light-dark(#000000,#7C3AED);strokeWidth=3;shape=wire;dashed=1;endArrow=none;endFill=0;" target="X57-dYHS3JSpBM6KqWVd-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="X57-dYHS3JSpBM6KqWVd-8" connectable="0" parent="X57-dYHS3JSpBM6KqWVd-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=fontFamily,fontStyle,textOpacity,labelBorderColor,labelBorderWidth,labelBackgroundColor,defaultLabelBackgroundColor,labelPadding;defaultLabelBackgroundColor=page;strokeColor=light-dark(transparent,#7C3AED);fontColor=light-dark(#000000,#7C3AED);fontSize=14;" value="&lt;p&gt;&lt;code&gt;Trunk 802.1Q&lt;/code&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.05" as="geometry">
+            <mxPoint x="55" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X57-dYHS3JSpBM6KqWVd-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=light-dark(#E51400,#FEE2E2);fontColor=light-dark(#B91C1C,#B91C1C);strokeColor=#B91C1C;gradientColor=default;" value="&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b style=&quot;&quot;&gt;FW-LYON&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;pfSense CE&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Routage inter-VLAN&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Passerelles .1&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="180" x="235" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="X57-dYHS3JSpBM6KqWVd-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=light-dark(#DBEAFE,#FEE2E2);fontColor=light-dark(#1E3A8A,#1E3A8A);strokeColor=#1D4ED8;gradientColor=default;strokeWidth=2;" value="&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;SW-LYON&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;Open vSwitch&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;VLAN 10, 20, 30, 40, 50, 999&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="225" x="212.5" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="X57-dYHS3JSpBM6KqWVd-12" edge="1" parent="1" source="X57-dYHS3JSpBM6KqWVd-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;" target="X57-dYHS3JSpBM6KqWVd-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="X57-dYHS3JSpBM6KqWVd-13" connectable="0" parent="X57-dYHS3JSpBM6KqWVd-12" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=fontFamily,fontColor,fontStyle,textOpacity,labelBorderColor,labelBorderWidth,labelBackgroundColor,defaultLabelBackgroundColor,labelPadding;defaultLabelBackgroundColor=page;fontSize=17;" value="WAN" vertex="1">
+          <mxGeometry relative="1" x="-0.2082" y="-2" as="geometry">
+            <mxPoint x="27" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X57-dYHS3JSpBM6KqWVd-9" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;perimeter=cloudPerimeter;fillColor=light-dark(#FFFFFF,#DBEAFE);strokeColor=#2563EB;fontColor=light-dark(#000000,#1E40AF);strokeWidth=2;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b style=&quot;&quot;&gt;INTERNET&lt;/b&gt;&lt;br&gt;WAN&lt;/font&gt;&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="91" width="160" x="245" y="-170" as="geometry" />
+        </mxCell>
+        <mxCell id="X57-dYHS3JSpBM6KqWVd-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=light-dark(#FFFFFF,#ECFDF5);strokeColor=light-dark(#000000,#059669);strokeWidth=2;fontColor=light-dark(#000000,#065F46);verticalAlign=top;align=left;spacingLeft=13;fontSize=14;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b style=&quot;&quot;&gt;VLAN 10 — SERVEURS&lt;/b&gt;&lt;br&gt;10.10.10.0/24&lt;br&gt;Passerelle : 10.10.10.1&lt;/font&gt;&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="210" width="360" x="-230" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="X57-dYHS3JSpBM6KqWVd-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=light-dark(#FFFFFF,#FFFFFF);strokeColor=#047857;strokeWidth=2;fontColor=light-dark(#065F46,#065F46);fontSize=13;" value="&lt;div&gt;&lt;b&gt;SRV-AD01&lt;/b&gt;&lt;/div&gt;&lt;div&gt;10.10.10.10&lt;/div&gt;&lt;div&gt;AD DS / DNS / Fichiers&lt;/div&gt;&lt;div&gt;ad.valcrea.fr&lt;/div&gt;" vertex="1">
+          <mxGeometry height="75" width="145" x="-210" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="X57-dYHS3JSpBM6KqWVd-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=light-dark(#FFFFFF,#FFFFFF);strokeColor=#047857;strokeWidth=2;fontColor=light-dark(#065F46,#065F46);fontSize=13;" value="&lt;div&gt;&lt;b&gt;SRV-SUP01&lt;/b&gt;&lt;/div&gt;&lt;div&gt;10.10.10.20&lt;/div&gt;&lt;div&gt;Supervision Zabbix&lt;/div&gt;" vertex="1">
+          <mxGeometry height="75" width="145" x="-40" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="X57-dYHS3JSpBM6KqWVd-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=light-dark(#FFFFFF,#ECFDF5);strokeColor=light-dark(#000000,#059669);strokeWidth=2;fontColor=light-dark(#000000,#065F46);verticalAlign=top;align=left;spacingLeft=13;fontSize=14;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b style=&quot;&quot;&gt;VLAN 20 — UTILISATEURS&lt;/b&gt;&lt;br&gt;10.10.20.0/24&lt;br&gt;Passerelle : 10.10.20.1&lt;/font&gt;&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="210" width="360" x="145" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="X57-dYHS3JSpBM6KqWVd-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=light-dark(#FFFFFF,#ECFDF5);strokeColor=light-dark(#000000,#059669);strokeWidth=2;fontColor=light-dark(#000000,#065F46);verticalAlign=top;align=left;spacingLeft=13;fontSize=14;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;code&gt;&lt;font style=&quot;&quot;&gt;&lt;b style=&quot;&quot;&gt;VLAN 30 — ADMIN&lt;br&gt;&lt;/b&gt;10.10.30.0/24&lt;br&gt;&lt;/font&gt;&lt;/code&gt;Passerelle : 10.10.30.1&lt;/font&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="210" width="360" x="520" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="X57-dYHS3JSpBM6KqWVd-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=light-dark(#FFFFFF,#ECFDF5);strokeColor=light-dark(#000000,#059669);strokeWidth=2;fontColor=light-dark(#000000,#065F46);verticalAlign=top;align=left;spacingLeft=13;fontSize=14;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b style=&quot;&quot;&gt;VLAN 40 — INVITES&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/b&gt;&lt;br&gt;10.10.40.0/24&lt;br&gt;Passerelle : 10.10.40.1&lt;/font&gt;&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="210" width="360" x="-230" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="X57-dYHS3JSpBM6KqWVd-20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=light-dark(#FFFFFF,#ECFDF5);strokeColor=light-dark(#000000,#059669);strokeWidth=2;fontColor=light-dark(#000000,#065F46);verticalAlign=top;align=left;spacingLeft=13;fontSize=14;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b style=&quot;&quot;&gt;VLAN 50 — ATELIER&lt;/b&gt;&lt;br&gt;10.10.50.0/24&lt;br&gt;Passerelle : 10.10.50.1&lt;/font&gt;&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="210" width="360" x="145" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="X57-dYHS3JSpBM6KqWVd-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=light-dark(#FFFFFF,#ECFDF5);strokeColor=light-dark(#000000,#059669);strokeWidth=2;fontColor=light-dark(#000000,#065F46);verticalAlign=top;align=left;spacingLeft=13;fontSize=14;" value="&lt;pre dir=&quot;ltr&quot;&gt;&lt;code&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b style=&quot;&quot;&gt;VLAN 999 — PARKING&lt;/b&gt;&lt;br&gt;Non routé&lt;br&gt;Aucune&lt;/font&gt;&lt;/code&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="210" width="360" x="520" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="X57-dYHS3JSpBM6KqWVd-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontSize=18;fontColor=light-dark(#E6D0DE,#E6D0DE);" value="Distribution VLAN — Ports access / segmentation logique" vertex="1">
+          <mxGeometry height="30" width="480" x="85" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="X57-dYHS3JSpBM6KqWVd-25" edge="1" parent="1" source="X57-dYHS3JSpBM6KqWVd-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.806;entryY=0.556;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;strokeColor=#7C3AED;strokeWidth=2;endArrow=none;endFill=0;dashed=1;" target="X57-dYHS3JSpBM6KqWVd-2">
+          <mxGeometry relative="1" x="0.0014" as="geometry" />
+        </mxCell>
+        <mxCell id="X57-dYHS3JSpBM6KqWVd-28" connectable="0" parent="X57-dYHS3JSpBM6KqWVd-25" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=fontFamily,fontColor,fontStyle,textOpacity,labelBorderColor,labelBorderWidth,labelBackgroundColor,defaultLabelBackgroundColor,labelPadding;defaultLabelBackgroundColor=page;fontSize=16;" value="OpenVPN" vertex="1">
+          <mxGeometry relative="1" x="0.1684" y="-2" as="geometry">
+            <mxPoint x="283" y="-31" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X57-dYHS3JSpBM6KqWVd-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=light-dark(#FFFFFF,#EDE9FE);strokeColor=#7C3AED;strokeWidth=2;fontColor=light-dark(#5B21B6,#5B21B6);fontSize=14;align=center;" value="&lt;div&gt;NOMADES — ACCÈS DISTANT&lt;/div&gt;&lt;div&gt;OpenVPN UDP 1194&lt;/div&gt;&lt;div&gt;Tunnel : 10.10.90.0/24&lt;/div&gt;&lt;div&gt;DNS / SMB autorisés&lt;/div&gt;&lt;div&gt;ADMIN interdit&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="300" x="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="X57-dYHS3JSpBM6KqWVd-24" edge="1" parent="1" source="X57-dYHS3JSpBM6KqWVd-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;innerLoopWaypoints=1;defaultLabelBackgroundColor=page;" target="X57-dYHS3JSpBM6KqWVd-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="X57-dYHS3JSpBM6KqWVd-31" edge="1" parent="1" source="X57-dYHS3JSpBM6KqWVd-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;fontColor=light-dark(#000000,#F59E0B);endArrow=none;endFill=0;strokeWidth=2;dashed=1;entryX=1.002;entryY=0.476;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=light-dark(#000000,#F59E0B);" target="X57-dYHS3JSpBM6KqWVd-1">
+          <mxGeometry relative="1" x="0.008" as="geometry" />
+        </mxCell>
+        <mxCell id="X57-dYHS3JSpBM6KqWVd-32" connectable="0" parent="X57-dYHS3JSpBM6KqWVd-31" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=fontFamily,fontColor,fontStyle,textOpacity,labelBorderColor,labelBorderWidth,labelBackgroundColor,defaultLabelBackgroundColor,labelPadding;fontColor=light-dark(#000000,#F59E0B);defaultLabelBackgroundColor=page;spacing=2;fontSize=17;" value="&lt;br&gt;Liaison sécurisée projetée &lt;br&gt;— NON DÉPLOYÉE&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.0968" y="-3" as="geometry">
+            <mxPoint x="9" y="-47" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="X57-dYHS3JSpBM6KqWVd-29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=light-dark(#EFF6FF,#EFF6FF);strokeColor=light-dark(#000000,#2563EB);strokeWidth=2;fontColor=light-dark(#000000,#1E40AF);" value="&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;SITE BORDEAUX — ARCHITECTURE CIBLE&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;NON DÉPLOYÉE&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;B01 — VLAN 20 UTILISATEURS&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;10.20.20.0/24&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Passerelle : 10.20.20.1&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;DNS métier → Lyon&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;B02 — VLAN 40 INVITÉS&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;10.20.40.0/24&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Passerelle : 10.20.40.1&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;DNS local prévu&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Internet uniquement — isolation invités&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Liaison sécurisée vers Lyon : PROJETÉE&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;NON DÉPLOYÉE&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="345" width="550" x="1110" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="X57-dYHS3JSpBM6KqWVd-30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;strokeColor=light-dark(#000000,#6B7280);fillColor=light-dark(#FFFFFF,#F3F4F6);strokeWidth=2;fontColor=light-dark(#000000,#374151);fontSize=17;" value="&lt;div&gt;&lt;b&gt;SITE NANTES — RÉSERVE FUTURE&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Réseau réservé : 10.30.0.0/16&lt;/div&gt;&lt;div&gt;SITE NON DÉPLOYÉ&lt;/div&gt;&lt;div&gt;Aucun équipement ni liaison active&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="460" x="1110" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="X57-dYHS3JSpBM6KqWVd-33" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=light-dark(#FFFFFF,#F1F5F9);strokeWidth=2;strokeColor=light-dark(#000000,#64748B);align=left;verticalAlign=top;fontColor=light-dark(#000000,#1E293B);spacingLeft=10;spacingTop=14;" value="&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;b&gt;POLITIQUE DE SÉCURITÉ — SYNTHÈSE E05&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Refus par défaut (deny all)&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;UTILISATEURS → AD / DNS / fichiers autorisés&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;INVITÉS → Internet uniquement&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;ATELIER → Services nécessaires, sans Internet&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;VPN → DNS / SMB autorisés, ADMIN interdit&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;padding-left: 0px;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;ADMIN → Administration ciblée&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;ZABBIX → Supervision des équipements autorisés&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;padding-left: 0px;&quot;&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;RDP TCP 3389 → Aucune publication Internet&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Exceptions non approuvées : voir E05&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;Règles détaillées : E05_MATRICE_FLUX.csv&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="345" width="480" x="-247.5" y="-380" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Yqqtnrwq2ZFHpgq76Q-I" name="Page-2">
+    <mxGraphModel dx="732" dy="711" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
