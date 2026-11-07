@@ -1,0 +1,52 @@
+﻿ID;Source;Destination;Service;Protocole;Ports_destination;Decision;Justification;Exigence_E03;Type;Portee;Journalisation;Validation
+F01;LYON UTILISATEURS 10.10.20.0/24;SRV-AD01 10.10.10.10;DNS AD;TCP/UDP;53;ALLOW;Résolution ad.valcrea.fr;"F01;F08";SOURCE-REQUIRED;LAB LYON;NON;À tester E13/E17
+F02;LYON UTILISATEURS 10.10.20.0/24;SRV-AD01 10.10.10.10;Kerberos;TCP/UDP;"88;464";ALLOW;Authentification domaine;"F01;F08";PROPOSED;LAB LYON;NON;À tester E13/E17
+F03;LYON UTILISATEURS 10.10.20.0/24;SRV-AD01 10.10.10.10;LDAP;TCP/UDP;389;ALLOW;Découverte et annuaire AD;"F01;F08";PROPOSED;LAB LYON;NON;À tester E13/E17
+F04;LYON UTILISATEURS 10.10.20.0/24;SRV-AD01 10.10.10.10;SMB fichiers;TCP;445;ALLOW;Partages selon groupes AD/NTFS;"F01;F08";SOURCE-REQUIRED;LAB LYON;NON;À tester E13/E17
+F05;LYON ATELIER 10.10.50.0/24;SRV-AD01 10.10.10.10;DNS AD;TCP/UDP;53;ALLOW;Résolution ad.valcrea.fr;"F04;F05";SOURCE-REQUIRED;LAB LYON;NON;À tester E13/E17
+F06;LYON ATELIER 10.10.50.0/24;SRV-AD01 10.10.10.10;Kerberos;TCP/UDP;"88;464";ALLOW;Authentification domaine;"F04;F05";PROPOSED;LAB LYON;NON;À tester E13/E17
+F07;LYON ATELIER 10.10.50.0/24;SRV-AD01 10.10.10.10;LDAP;TCP/UDP;389;ALLOW;Découverte et annuaire AD;"F04;F05";PROPOSED;LAB LYON;NON;À tester E13/E17
+F08;LYON ATELIER 10.10.50.0/24;SRV-AD01 10.10.10.10;SMB fichiers;TCP;445;ALLOW;"Lecture Production; droits NTFS RO";"F04;F05";SOURCE-REQUIRED;LAB LYON;NON;À tester E13/E17
+F09;LYON ADMIN 10.10.30.0/24;SRV-AD01 10.10.10.10;DNS AD;TCP/UDP;53;ALLOW;Résolution ad.valcrea.fr;F07;SOURCE-REQUIRED;LAB LYON;NON;À tester E13/E17
+F10;LYON ADMIN 10.10.30.0/24;SRV-AD01 10.10.10.10;Kerberos;TCP/UDP;"88;464";ALLOW;Authentification domaine;F07;PROPOSED;LAB LYON;NON;À tester E13/E17
+F11;LYON ADMIN 10.10.30.0/24;SRV-AD01 10.10.10.10;LDAP;TCP/UDP;389;ALLOW;Découverte et annuaire AD;F07;PROPOSED;LAB LYON;NON;À tester E13/E17
+F12;LYON ADMIN 10.10.30.0/24;SRV-AD01 10.10.10.10;SMB fichiers;TCP;445;ALLOW;Partages selon groupes AD/NTFS;F07;SOURCE-REQUIRED;LAB LYON;NON;À tester E13/E17
+F13;BORDEAUX UTILISATEURS 10.20.20.0/24;SRV-AD01 10.10.10.10;DNS AD;TCP/UDP;53;ALLOW;Résolution ad.valcrea.fr;F01;PROJECT-DECIDED;ARCHITECTURE CIBLE;NON;À tester E13/E17
+F14;BORDEAUX UTILISATEURS 10.20.20.0/24;SRV-AD01 10.10.10.10;Kerberos;TCP/UDP;"88;464";ALLOW;Authentification domaine;F01;PROPOSED;ARCHITECTURE CIBLE;NON;À tester E13/E17
+F15;BORDEAUX UTILISATEURS 10.20.20.0/24;SRV-AD01 10.10.10.10;LDAP;TCP/UDP;389;ALLOW;Découverte et annuaire AD;F01;PROPOSED;ARCHITECTURE CIBLE;NON;À tester E13/E17
+F16;BORDEAUX UTILISATEURS 10.20.20.0/24;SRV-AD01 10.10.10.10;SMB fichiers;TCP;445;ALLOW;Partages selon groupes AD/NTFS;F01;SOURCE-REQUIRED;ARCHITECTURE CIBLE;NON;À tester E13/E17
+F17;LYON UTILISATEURS 10.10.20.0/24;SRV-AD01 10.10.10.10;RPC endpoint mapper;TCP;135;ALLOW;Opérations AD Windows à confirmer;F01;PROPOSED;LAB LYON;NON;À tester E13/E17
+F18;LYON UTILISATEURS 10.10.20.0/24;SRV-AD01 10.10.10.10;RPC dynamique;TCP;49152-65535;ALLOW;"Exception conditionnelle si tests AD exigent RPC; limiter à SRV-AD01";F01;PROPOSED;LAB LYON;NON;PENDING validation technique E13
+F19;LYON UTILISATEURS 10.10.20.0/24;Internet public hors RFC1918;Web SaaS;TCP;"80;443";ALLOW;ERP SaaS messagerie et navigation;F08;SOURCE-REQUIRED;LAB LYON;NON;À tester E13/E17
+F20;LYON ADMIN 10.10.30.0/24;FW-LYON 10.10.30.1;Administration HTTPS;TCP;443;ALLOW;Gestion pfSense depuis ADMIN;F07;SOURCE-REQUIRED;LAB LYON;NON;À tester E13/E17
+F21;LYON ADMIN 10.10.30.0/24;SRV-AD01 10.10.10.10;Administration serveur;TCP;3389;ALLOW;RDP interne réservé au poste ADMIN autorisé;F07;PROPOSED;LAB LYON;NON;À tester E13/E17
+F22;LYON ADMIN 10.10.30.0/24;SRV-SUP01 10.10.10.20;Interface Zabbix;TCP;"80;443";ALLOW;Consultation supervision depuis ADMIN;F09;PROPOSED;LAB LYON;NON;À tester E13/E17
+F23;LYON ADMIN 10.10.30.0/24;Équipements internes identifiés;Administration SSH/HTTPS;TCP;"22;443";ALLOW;Gestion ciblée après inventaire des équipements;F07;PROPOSED;ARCHITECTURE CIBLE;NON;PENDING CAP01 et inventaire
+F24;LYON INVITES 10.10.40.0/24;FW-LYON 10.10.40.1;DNS invités;TCP/UDP;53;ALLOW;Résolveur local sans accès DNS AD;F03;SOURCE-REQUIRED;LAB LYON;NON;À tester E13/E17
+F25;LYON INVITES 10.10.40.0/24;Internet public hors RFC1918;Web visiteurs;TCP;"80;443";ALLOW;Navigation web uniquement;F03;SOURCE-REQUIRED;LAB LYON;NON;À tester E13/E17
+F26;LYON INVITES 10.10.40.0/24;Réseaux internes Lyon/Bordeaux et interfaces de gestion;Isolation invités;ANY;ANY;DENY;Aucun accès réseau privé ni administration;"F03;NF05";SOURCE-REQUIRED;LAB LYON;OUI;À tester E13/E17
+F27;LYON INVITES 10.10.40.0/24;FW-LYON 10.10.40.1;Administration pare-feu;TCP;"80;443";DENY;"Interdire GUI pfSense; DNS autorisé séparément";F03;SOURCE-REQUIRED;LAB LYON;OUI;À tester E13/E17
+F28;LYON ATELIER 10.10.50.0/24;Internet/WAN;Isolation atelier;ANY;ANY;DENY;Machines CNC sans Internet;F04;SOURCE-REQUIRED;LAB LYON;OUI;À tester E13/E17
+F29;LYON ATELIER 10.10.50.0/24;Autres réseaux internes sauf SRV-AD01;Isolation latérale;ANY;ANY;DENY;Atelier limité aux services AD et Production;"F04;NF05";PROPOSED;LAB LYON;OUI;À tester E13/E17
+F30;NOMADES VPN 10.10.90.0/24;SRV-AD01 10.10.10.10;DNS AD;TCP/UDP;53;ALLOW;Résolution domaine après connexion VPN;F02;SOURCE-REQUIRED;LAB LYON;NON;À tester E13/E17
+F31;NOMADES VPN 10.10.90.0/24;SRV-AD01 10.10.10.10;SMB fichiers;TCP;445;ALLOW;Accès partages autorisés du commercial;"F01;F02";SOURCE-REQUIRED;LAB LYON;NON;À tester E13/E17
+F32;NOMADES VPN 10.10.90.0/24;LYON ADMIN 10.10.30.0/24;Isolation administration;ANY;ANY;DENY;Pas d'administration via VPN nomade;"F02;NF05";SOURCE-REQUIRED;LAB LYON;OUI;À tester E13/E17
+F33;NOMADES VPN 10.10.90.0/24;Autres réseaux sauf SRV-AD01;Restriction VPN;ANY;ANY;DENY;VPN limité au serveur explicitement requis;F02;SOURCE-REQUIRED;LAB LYON;OUI;À tester E13/E17
+F34;Internet/WAN;FW-LYON WAN;OpenVPN entrant;UDP;1194;ALLOW;Accès nomades chiffré et authentifié;F02;SOURCE-REQUIRED;LAB LYON;OUI;À tester E13/E17
+F35;Internet/WAN;SRV-AD01 10.10.10.10;RDP public;TCP;3389;DENY;Supprimer exposition RDP critique;"F02;R01";SOURCE-REQUIRED;LAB LYON;OUI;À tester E13/E17
+F36;Internet/WAN;Réseaux privés Lyon/Bordeaux;Accès entrant non publié;ANY;ANY;DENY;Aucune publication interne directe;NF05;SOURCE-REQUIRED;LAB LYON;OUI;À tester E13/E17
+F37;SRV-SUP01 10.10.10.20;FW-LYON 10.10.10.1;SNMP lecture seule;UDP;161;ALLOW;Superviser firewall depuis Zabbix;F09;SOURCE-REQUIRED;LAB LYON;NON;À tester E13/E17
+F38;SRV-SUP01 10.10.10.20;SRV-AD01 10.10.10.10;Zabbix agent passif;TCP;10050;ALLOW;Collecter métriques Windows;F09;SOURCE-REQUIRED;LAB LYON;NON;À tester E13/E17
+F39;SRV-AD01 10.10.10.10;SRV-SUP01 10.10.10.20;Zabbix actif optionnel;TCP;10051;ALLOW;Uniquement si mode agent actif retenu;F09;PROPOSED;LAB LYON;NON;"PENDING mode agent; non nécessaire en passif"
+F40;SRV-AD01 10.10.10.10;FW-LYON 10.10.10.1;NTP;UDP;123;ALLOW;Synchronisation horaire prescrite;NF05;SOURCE-REQUIRED;LAB LYON;NON;À tester E13/E17
+F41;SRV-AD01 10.10.10.10;FW-LYON 10.10.10.1;DNS forwarder;TCP/UDP;53;ALLOW;Résolution externe via redirecteur pfSense;F08;SOURCE-REQUIRED;LAB LYON;NON;À tester E13/E17
+F42;LYON SERVEURS 10.10.10.0/24;Internet public hors RFC1918;Mises à jour systèmes;TCP;"80;443";ALLOW;Mises à jour serveurs via destinations maîtrisées;NF05;PROPOSED;LAB LYON;NON;PENDING liste destinations / E13
+F43;BORDEAUX UTILISATEURS 10.20.20.0/24;SRV-AD01 10.10.10.10;RPC AD optionnel;TCP;"135;49152-65535";ALLOW;"Uniquement si nécessaire à l'authentification distante; restreindre au DC";F01;PROPOSED;ARCHITECTURE CIBLE;NON;PENDING tests et tunnel
+F44;BORDEAUX UTILISATEURS 10.20.20.0/24;Internet public hors RFC1918;Web métier;TCP;"80;443";ALLOW;ERP SaaS et messagerie Bordeaux;F08;PROJECT-DECIDED;ARCHITECTURE CIBLE;NON;À tester E13/E17
+F45;BORDEAUX UTILISATEURS 10.20.20.0/24;LYON ADMIN 10.10.30.0/24;Isolation intersites;ANY;ANY;DENY;Aucun droit administratif agence;NF05;PROPOSED;ARCHITECTURE CIBLE;OUI;À tester E13/E17
+F46;BORDEAUX INVITES 10.20.40.0/24;10.20.40.1 résolveur local;DNS visiteurs;TCP/UDP;53;ALLOW;DNS local approuvé B02;F03;PROJECT-DECIDED;ARCHITECTURE CIBLE;NON;À tester E13/E17
+F47;BORDEAUX INVITES 10.20.40.0/24;Internet public hors RFC1918;Web visiteurs;TCP;"80;443";ALLOW;Accès web showroom;F03;PROJECT-DECIDED;ARCHITECTURE CIBLE;NON;À tester E13/E17
+F48;BORDEAUX INVITES 10.20.40.0/24;Réseaux internes Lyon/Bordeaux et administration locale;Isolation invités Bordeaux;ANY;ANY;DENY;Aucun accès aux réseaux métier;F03;PROJECT-DECIDED;ARCHITECTURE CIBLE;OUI;À tester E13/E17
+F49;LYON/BORDEAUX;NANTES 10.30.0.0/16 réservé;Site non déployé;ANY;ANY;DENY;Réserve sans routage actif;NF05;SOURCE-REQUIRED;ARCHITECTURE CIBLE;OUI;À tester E13/E17
+F50;VLAN 999 PARKING;Toutes zones;VLAN non routé;ANY;ANY;DENY;Ports inutilisés sans interface L3;NF05;SOURCE-REQUIRED;LAB LYON;NON;Contrôle OVS E09
+F51;TOUTES ZONES;TOUTES DESTINATIONS;Refus implicite final;ANY;ANY;DENY;Tout flux non autorisé explicitement est refusé;NF05;SOURCE-REQUIRED;LAB LYON + ARCHITECTURE CIBLE;OUI refus sensibles;À tester E13/E17
